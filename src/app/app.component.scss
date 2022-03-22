@@ -1,0 +1,84 @@
+input {
+    width: -webkit-fill-available;
+    padding: 16px 12px;
+    color: rgba(115, 149, 157, 1);
+    border: 2px solid #D6E1E3;
+    border-radius: 8px;
+}
+
+.main-div {
+    position: relative;
+    width: 360px !important;
+    height: 48px !important;
+
+    img {
+        position: absolute;
+        right: 0;
+        margin: 14px;
+    }
+}
+
+::placeholder {
+    color: rgba(115, 149, 157, 1);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+::ng-deep {
+    .pickerDropdownDiv {
+        margin: 16px !important;
+        label {
+            color: rgba(21, 79, 91, 1);
+            
+            font-weight: 700;
+        }
+    }
+
+    .buttonDiv {
+        margin-top: 12px !important;
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+        label {
+            color: rgba(21, 79, 91, 1);
+            font-weight: 400;
+        }
+        input {
+            margin-right: 10px;
+                width: 1.3em;
+                height: 1.3em;
+                background-color: white;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: 1px solid #ddd;
+                appearance: none;
+                -webkit-appearance: none;
+                outline: none;
+                cursor: pointer;
+            
+        }
+        input:checked{
+            background-color: rgba(0, 164, 183, 1);
+        }
+
+        h2 {
+            width: 100%; 
+            text-align: center; 
+            border-bottom: 1px solid rgba(214, 225, 227, 1); 
+            line-height: 0.1em;
+            margin: 30px 0 18px; 
+        } 
+         
+        h2 span { 
+            background:#fff; 
+            color: rgba(115, 149, 157, 1);
+            font-weight: 400;
+            font-size: 12px;
+            padding:0 10px; 
+        }
+    }
+
+    .myDpIcon::before,.myDpIcon::after {
+        font-family: 'angular-mydatepicker';
+    }
+}
