@@ -34,7 +34,10 @@ export class AppComponent implements OnDestroy {
       sa: 'S',
     },
     firstDayOfWeek: 'su',
-    markCurrentMonth: true
+    markCurrentMonth: true,
+    markCurrentDay: true,
+    monthSelector: false,
+    yearSelector: false
   };
 
   model: IMyDateModel | null = null;
